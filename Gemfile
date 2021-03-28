@@ -27,7 +27,14 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-
+# OAuth
+gem 'omniauth-oauth2', '~> 1.7'
+# OmniAuth CSRF protection
+gem 'omniauth-rails_csrf_protection', '~> 0.1.2'
+# REST calls to Microsoft Graph
+gem 'httparty', '~> 0.18.1'
+# Session storage in database
+gem 'activerecord-session_store', '~> 1.1.3'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
